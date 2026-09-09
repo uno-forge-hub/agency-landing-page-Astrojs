@@ -68,33 +68,99 @@ import Title from "../shared/Title.astro";
                 </div>
             </div>
 
-            <div class="mt-10 p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
-                <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
-                    <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+            <!-- Área de Transparência Ativa -->
+            <div class="mt-10 flex flex-col gap-4">
+                
+                <!-- 1. Termo de Fomento Nº 57/2025 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
 
-                    <div class="relative z-10 text-center sm:text-left">
-                        <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
-                            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento Nº 57/2025</strong> e nossa prestação de contas.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento.pdf" download="Termo_Fomento_Wake_Up_2025.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
                                 </svg>
                             </span>
-                            Transparência Ativa
-                        </h3>
-                        <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
-                            Compromisso com a verdade. Acesse o <strong>Termo de Fomento Nº 57/2025</strong> e nossa prestação de contas.
-                        </p>
+                        </a>
                     </div>
-                    
-                    <a href="/termo-fomento.pdf" download="Termo_Fomento_Wake_Up_2025.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
-                        Baixar Documento
-                        <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
-                            </svg>
-                        </span>
-                    </a>
                 </div>
+
+                <!-- 2. Termo de Fomento TF-63-SEL/2026 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento TF-63-SEL/2026</strong> da Secretaria de Estado de Esporte e Lazer do DF.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento-(1)22.pdf" download="Termo_Fomento_TF_63_SEL_2026.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Termo de Fomento TF-7-SEL/2026 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento TF-7-SEL/2026 (Inexigibilidade)</strong> da Secretaria de Estado de Esporte e Lazer do DF.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento-(1).pdf" download="Termo_Fomento_TF_7_SEL_2026.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </Container>
