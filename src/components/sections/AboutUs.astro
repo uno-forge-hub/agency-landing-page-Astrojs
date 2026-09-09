@@ -1,47 +1,166 @@
 ---
-import Info from "../cards/Info.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
-
 ---
 
-<section id="about-us">
-    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
-        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
-            <div class="w-full h-80 sm:h-96 midmd:h-full relative">
-                <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
-                <div class="absolute  p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+<section id="sobre-nos" class="overflow-hidden my-12 md:my-16">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 relative z-10">
+        
+        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto z-10 relative">
+            
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/30 via-indigo-500/10 to-green-400/30 blur-[80px] opacity-70 -z-10 pointer-events-none"></div>
+
+            <div class="w-full h-80 sm:h-96 midmd:h-full relative group rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] dark:shadow-none">
+                <img src="/images/551143821_2199037603955991_604291839961777760_n.jpg" 
+                     alt="Ação social realizada pelo Instituto Inspirar e Produzir" 
+                     width="1240" height="1385"
+                     class="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-105" />
                 
-                <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
-                <img src={"/images/dev-with-c-1.webp"} alt="banner image" 
-                width="1240" height="1385"
-                class=" w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full" />
+                <div class="absolute inset-0 bg-heading-1/10 group-hover:bg-transparent transition-colors duration-300"></div>
             </div>
         </div>
-        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
+
+        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col z-20 py-6">
             <Title>
-                We help drive your business forward faster
+                Uma força transformadora em Brasília
             </Title>
-            <Paragraph className="mt-8">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, saepe aliquid autem alias vero distinctio dignissimos consequatur? Excepturi quibusdam, quam ipsum hic, laudantium ducimus suscipit, culpa facere consequuntur repellat delectus.
+            <Paragraph className="mt-8 text-lg">
+                Fundado em 18 de abril de 2022, o <strong>Instituto Inspirar e Produzir (IIP)</strong> não é apenas uma organização, é um movimento.
             </Paragraph>
-            <div class="pt-8 grid grid-cols-2 items-center gap-4 max-w-3xl md:max-w-[none]">
-                <Info description="Lorem ipsum dolor sit amet consectetur" title="Mission">
-                    <span slot="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 sm:w-5 sm:h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                        </svg>                              
-                    </span>
-                </Info>
-                <Info description="Lorem ipsum dolor sit amet consectetur" title="Vision">
-                    <span slot="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 sm:w-5 sm:h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </span>
-                </Info>
+            <Paragraph className="mt-4">
+                Atuamos na intersecção vibrante entre <span class="text-primary font-bold">Turismo</span>, <span class="text-primary font-bold">Esporte</span> e <span class="text-primary font-bold">Cultura</span>, criando experiências que marcam vidas e fortalecem nossa identidade no Distrito Federal.
+            </Paragraph>
+            
+            <div class="pt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl md:max-w-[none]">
+                
+                <div class="group p-6 bg-box-bg rounded-3xl border border-box-border shadow-sm hover:shadow-xl hover:shadow-primary/20 hover:border-primary/50 transition-all duration-300 cursor-default relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 flex flex-col items-start">
+                        <span class="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4 inline-block transform group-hover:-rotate-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-heading-1 mb-2">Nossa Missão</h3>
+                        <p class="text-heading-3 text-sm leading-relaxed">
+                            Promover a inclusão e o desenvolvimento através de grandes eventos e projetos comunitários sustentáveis que deixam um legado real.
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="group p-6 bg-box-bg rounded-3xl border border-box-border shadow-sm hover:shadow-xl hover:shadow-green-500/20 hover:border-green-500/50 transition-all duration-300 cursor-default relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 flex flex-col items-start">
+                        <span class="p-3 rounded-2xl bg-green-500/10 text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300 mb-4 inline-block transform group-hover:rotate-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-heading-1 mb-2">Nossa Visão</h3>
+                        <p class="text-heading-3 text-sm leading-relaxed">
+                            Ser a principal referência no Centro-Oeste na gestão de projetos que unem, com excelência, entretenimento, impacto social e economia criativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área de Transparência Ativa -->
+            <div class="mt-10 flex flex-col gap-4">
+                
+                <!-- 1. Termo de Fomento Nº 57/2025 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento Nº 57/2025</strong> e nossa prestação de contas.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento.pdf" download="Termo_Fomento_Wake_Up_2025.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Termo de Fomento TF-63-SEL/2026 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento TF-63-SEL/2026</strong> da Secretaria de Estado de Esporte e Lazer do DF.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento-(1)22.pdf" download="Termo_Fomento_TF_63_SEL_2026.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Termo de Fomento TF-7-SEL/2026 -->
+                <div class="p-1 rounded-3xl bg-gradient-to-br from-primary/30 via-box-bg to-green-500/30 shadow-md">
+                    <div class="p-6 bg-box-bg/90 dark:bg-box-bg/95 backdrop-blur-xl rounded-[calc(1.5rem-4px)] flex flex-col sm:flex-row gap-6 items-center justify-between relative overflow-hidden group">
+                        <div class="absolute -right-20 -top-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+
+                        <div class="relative z-10 text-center sm:text-left">
+                            <h3 class="font-bold text-heading-1 text-xl flex items-center justify-center sm:justify-start gap-3">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                </span>
+                                Transparência Ativa
+                            </h3>
+                            <p class="text-heading-3 text-sm mt-2 max-w-sm leading-relaxed">
+                                Compromisso com a verdade. Acesse o <strong>Termo de Fomento TF-7-SEL/2026 (Inexigibilidade)</strong> da Secretaria de Estado de Esporte e Lazer do DF.
+                            </p>
+                        </div>
+                        
+                        <a href="/termo-fomento-(1).pdf" download="Termo_Fomento_TF_7_SEL_2026.pdf" class="relative z-10 group/btn px-6 py-3 rounded-full text-sm font-bold bg-primary text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/30 flex items-center gap-3 whitespace-nowrap hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            Baixar Documento
+                            <span class="group-hover/btn:translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </Container>
