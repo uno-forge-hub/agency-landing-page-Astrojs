@@ -2,6 +2,20 @@
 import Container from "../shared/Container.astro";
 import Title from "../shared/Title.astro";
 
+const logos = [
+    {
+        src: "/logos/spotify.png",
+        alt: "Spotify",
+    },
+    {
+        src: "/logos/slack.png",
+        alt: "Slack",
+    },
+    {
+        src: "/logos/paypallogo.png",
+        alt: "PayPal",
+    },
+];
 ---
 
 <section>
@@ -11,43 +25,108 @@ import Title from "../shared/Title.astro";
                 Trusted by companies like
             </Title>
         </div>
-        <div class="flex justify-center flex-wrap gap-4">
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/spotify.png" width="100" height="60" alt="spotify" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
+        <div class="relative overflow-hidden">
+            <div class="overflow-hidden mb-4">
+                <div class="marquee-track marquee-left flex w-max">
+                    <div class="flex shrink-0 gap-6 pr-6">
+                        {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0">
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div class="flex shrink-0 gap-6 pr-6">
+                        {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0" >
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>                    
+                    <div class="flex shrink-0 gap-6 pr-6">
+                         {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0" >
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/slack.png" width="100" height="60" alt="slack" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/paypallogo.png" width="100" height="60" alt="paypal" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/spotify.png" width="100" height="60" alt="spotify" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/slack.png" width="100" height="60" alt="slack" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/paypallogo.png" width="100" height="60" alt="paypal" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/spotify.png" width="100" height="60" alt="spotify" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/slack.png" width="100" height="60" alt="slack" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/paypallogo.png" width="100" height="60" alt="paypal" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/spotify.png" width="100" height="60" alt="spotify" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/slack.png" width="100" height="60" alt="slack" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
-            </div>
-            <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
-                <img src="/logos/paypallogo.png" width="100" height="60" alt="paypal" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
+            <div class="overflow-hidden">
+                <div class="marquee-track marquee-right flex w-max">
+                 
+                    <div class="flex shrink-0 gap-6 pr-6">
+                        {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0">
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div class="flex shrink-0 gap-6 pr-6">
+                         {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0">
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div class="flex shrink-0 gap-6 pr-6">
+                        {
+                            logos.map((logo) => (
+                                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group shrink-0">
+                                    <img src={logo.src} width="100" height="60" alt={logo.alt} class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105"/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </Container>
 </section>
+
+<style>
+    .marquee-track {
+        will-change: transform;
+    }
+    .marquee-left {
+        animation: marquee-left 25s linear infinite;
+    }
+    .marquee-right {
+        animation: marquee-right 30s linear infinite;
+    }
+    .marquee-track:hover {
+        animation-play-state: paused;
+    }
+    @keyframes marquee-left {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-33.333333%);
+        }
+    }
+    @keyframes marquee-right {
+        from {
+            transform: translateX(-33.333333%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .marquee-track {
+            animation: none;
+        }
+    }
+</style>
